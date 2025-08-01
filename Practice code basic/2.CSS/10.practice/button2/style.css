@@ -28,6 +28,8 @@
 .btn-modern::before {
   content: "";
   background-color: linear-gradient(to right, #e84949, #00ff2f);
+  transform: scaleX(0);
+  transform-origin: left;
 }
 
 
