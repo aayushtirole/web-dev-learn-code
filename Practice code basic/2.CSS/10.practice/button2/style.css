@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  background-color: black;
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-modern {
+  padding: 0.8rem 2.3rem;
+  font-size: 20px;
+  color: white;
+  background-color: #111111;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.btn-modern::before {
+  content: "";
+  background-color: linear-gradient(to right, #e84949, #00ff2f);
+}
+
+
