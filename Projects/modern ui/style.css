@@ -69,9 +69,15 @@ html,body {
 }
 
 .b1{
+    padding: 30px;
     width: 25%;
     height: 100%;
     background-color: #fff;
+}
+
+.b1 p{
+    font-size: 12px;
+    margin-top: 20px;
 }
 
 .b2{
@@ -91,7 +97,14 @@ html,body {
 .b3-top {
     width: 100%;
     height: 50%;
+    padding: 20px;
+    color: #fff;
     background-color: orangered;
+}
+
+.b3-top p{
+    margin-top: 10px;
+    font-size: 10px;
 }
 
 .b3-bottom {
@@ -102,9 +115,29 @@ html,body {
     background-position: center;
 }
 
-
 .b4{
     width: 30%;
     height: 100%;
-    background-color: #00ff26;
+    padding: 30px;
+    background-color: #444;
+    color: white;
+}
+
+.notification{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification .photo {
+    height: 40px;
+    width:40px;
+    border-radius: 50%;
+    background-color: red;
+    
+}
+
+.notification p{
+    width: 80%;
+    font-size: 12px;
 }
