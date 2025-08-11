@@ -6,19 +6,18 @@
 }
 
 html,body {
-
     width: 100%;
     height: 100%;
 }
 
 .main-container {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .top {
     width: 100%;
-    height: 60%;
+    min-height: 60vh;
     background-image: url(https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-position: bottom;
@@ -27,7 +26,7 @@ html,body {
 .overlay {
     position: relative;
     width: 100%;
-    height: 100%;
+    min-height: inherit;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -63,7 +62,7 @@ html,body {
 
 .bottom {
     width: 100%;
-    height: 40%;
+    min-height: 40vh;
     background-color: #6312de;
     display: flex;
 }
@@ -71,7 +70,7 @@ html,body {
 .b1{
     padding: 30px;
     width: 25%;
-    height: 100%;
+    min-height: inherit;
     background-color: #fff;
 }
 
@@ -82,7 +81,7 @@ html,body {
 
 .b2{
     width: 25%;
-    height: 100%;
+    min-height: inherit;
     background-image: url(https://images.unsplash.com/photo-1519692933481-e162a57d6721?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     
@@ -90,13 +89,13 @@ html,body {
 
 .b3{
     width: 20%;
-    height: 100%;
+    min-height: inherit;
     
 }
 
 .b3-top {
     width: 100%;
-    height: 50%;
+    min-height: 20vh;
     padding: 20px;
     color: #fff;
     background-color: orangered;
@@ -109,7 +108,7 @@ html,body {
 
 .b3-bottom {
     width: 100%;
-    height: 50%;
+    min-height: 20vh;
     background-image: url(https://images.unsplash.com/photo-1538998073820-4dfa76300194?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-position: center;
@@ -117,7 +116,7 @@ html,body {
 
 .b4{
     width: 30%;
-    height: 100%;
+    min-height: inherit;
     padding: 30px;
     background-color: #444;
     color: white;
@@ -140,4 +139,52 @@ html,body {
 .notification p{
     width: 80%;
     font-size: 12px;
+}
+
+
+@media (max-width:500px) {
+    .overlay .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text h1{
+        font-size: 10vw;
+    }
+
+    .overlay .text .text-right {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .overlay .text .text-right p {
+        width: initial;
+        margin-top: 20px;
+    }
+
+    .overlay .text .text-right .icon {
+        margin-top: 30px;
+       
+    }
+
+    .bottom{
+        min-height: 20vh;
+    }
+
+    .bottom{
+        flex-direction: column;
+    }
+
+    .b1, .b2, .b3, .b4 {
+        width: 100%;
+    }
+
+    .b3{
+        flex-direction: column;
+    }
+
+
+    
+
+    
 }
