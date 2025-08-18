@@ -1,5 +1,3 @@
-// *********************** Conversion ***********************
-
 let score = "hitesh"
 
 //console.log(typeof score);
@@ -28,8 +26,6 @@ let someNumber = 33
 let stringNumber = String(someNumber)
 // console.log(stringNumber);
 // console.log(typeof stringNumber);
-
-
 
 // *********************** Operations ***********************
 
@@ -69,4 +65,4 @@ let gameCounter = 100
 console.log(gameCounter);
 
 // link to study
-// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversions
+// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
