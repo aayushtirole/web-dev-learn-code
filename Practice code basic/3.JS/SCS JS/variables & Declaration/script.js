@@ -1,4 +1,4 @@
 // var let cont
 // declaration and initialization
 
-var a = 10;
+var a = 12;
