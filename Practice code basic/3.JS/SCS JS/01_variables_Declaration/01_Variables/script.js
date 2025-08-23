@@ -45,3 +45,7 @@ const a = 12;
     const a = 20;
     console.log(a); // 20
 }
+
+
+
+
