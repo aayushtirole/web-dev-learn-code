@@ -11,3 +11,19 @@ var a = 12;
 
 var a = undefined; // declare part (hoisted)
 a = 12; // initialize part (not hoisted)
+
+
+let a = 12;
+
+let a; // declare part (ye hoist hota hain )
+a = 12; // initialize part (not hoisted)  
+
+// explaination 
+
+// var -> hoist -> value= undefined
+// let/const -> hoist -> value= uninitialized (temporal dead zone),(reference error :-if accessed before initialization)
+// const -> hoist -> value= uninitialized (temporal dead zone),(reference error :-if accessed before initialization)
+// function -> hoist -> value= function definition
+// class -> hoist -> value= uninitialized (temporal dead zone)
+
+
