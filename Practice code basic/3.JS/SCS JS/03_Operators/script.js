@@ -5,55 +5,58 @@
  * They are categorized as follows:
  *
  * 1. Arithmetic Operators:
- *    - +  : Addition (e.g., a + b)
- *    - -  : Subtraction (e.g., a - b)
- *    - *  : Multiplication (e.g., a * b)
- *    - /  : Division (e.g., a / b)
- *    - %  : Modulus (remainder, e.g., a % b)
- *    - ++ : Increment (adds 1, e.g., a++)
- *    - -- : Decrement (subtracts 1, e.g., a--)
+ *     +  : Addition (e.g., a + b)
+ *     -  : Subtraction (e.g., a - b)
+ *     *  : Multiplication (e.g., a * b)
+ *     /  : Division (e.g., a / b)
+ *     %  : Modulus (remainder, e.g., a % b)
+ *     ++ : Increment (adds 1, e.g., a++)
+ *     -- : Decrement (subtracts 1, e.g., a--)
+ *     ** : Exponentiation (e.g., a ** b)   
  *
  * 2. Assignment Operators:
- *    - =   : Assigns value (e.g., a = 5)
- *    - +=  : Adds and assigns (e.g., a += 2 is a = a + 2)
- *    - -=  : Subtracts and assigns (e.g., a -= 2)
- *    - *=  : Multiplies and assigns (e.g., a *= 2)
- *    - /=  : Divides and assigns (e.g., a /= 2)
- *    - %=  : Modulus and assigns (e.g., a %= 2)
+ *     =   : Assigns value (e.g., a = 5)
+ *     +=  : Adds and assigns (e.g., a += 2 is a = a + 2)
+ *     -=  : Subtracts and assigns (e.g., a -= 2)
+ *     *=  : Multiplies and assigns (e.g., a *= 2)
+ *     /=  : Divides and assigns (e.g., a /= 2)
+ *     %=  : Modulus and assigns (e.g., a %= 2)
+ *    **= : Exponentiation and assigns (e.g., a **= 2)
  *
  * 3. Comparison Operators:
- *    - ==   : Equal to (compares values, e.g., a == b)
- *    - ===  : Strict equal (compares value and type, e.g., a === b)
- *    - !=   : Not equal (e.g., a != b)
- *    - !==  : Strict not equal (e.g., a !== b)
- *    - >    : Greater than (e.g., a > b)
- *    - <    : Less than (e.g., a < b)
- *    - >=   : Greater than or equal to (e.g., a >= b)
- *    - <=   : Less than or equal to (e.g., a <= b)
+ *     ==   : Equal to (compares values, e.g., a == b)
+ *     ===  : Strict equal (compares value and type, e.g., a === b)
+ *     !=   : Not equal (e.g., a != b)
+ *     !==  : Strict not equal (e.g., a !== b)
+ *     >    : Greater than (e.g., a > b)
+ *     <    : Less than (e.g., a < b)
+ *     >=   : Greater than or equal to (e.g., a >= b)
+ *     <=   : Less than or equal to (e.g., a <= b)
+ * 
  *
  * 4. Logical Operators:
- *    - && : Logical AND (true if both are true, e.g., a && b)
- *    - || : Logical OR (true if at least one is true, e.g., a || b)
- *    - !  : Logical NOT (inverts boolean, e.g., !a)
+ *     && : Logical AND (true if both are true, e.g., a && b)
+ *     || : Logical OR (true if at least one is true, e.g., a || b)
+ *     !  : Logical NOT (inverts boolean, e.g., !a)
  *
  * 5. Bitwise Operators:
- *    - &  : AND (e.g., a & b)
- *    - |  : OR (e.g., a | b)
- *    - ^  : XOR (e.g., a ^ b)
- *    - ~  : NOT (e.g., ~a)
- *    - << : Left shift (e.g., a << 2)
- *    - >> : Right shift (e.g., a >> 2)
- *    - >>>: Unsigned right shift (e.g., a >>> 2)
+ *     &  : AND (e.g., a & b)
+ *     |  : OR (e.g., a | b)
+ *     ^  : XOR (e.g., a ^ b)
+ *     ~  : NOT (e.g., ~a)
+ *     << : Left shift (e.g., a << 2)
+ *     >> : Right shift (e.g., a >> 2)
+ *     >>>: Unsigned right shift (e.g., a >>> 2)
  *
  * 6. String Operator:
- *    - + : Concatenation (joins strings, e.g., "a" + "b")
+ *     + : Concatenation (joins strings, e.g., "a" + "b")
  *
  * 7. Conditional (Ternary) Operator:
- *    - condition ? expr1 : expr2 (returns expr1 if condition is true, else expr2)
+ *     condition ? expr1 : expr2 (returns expr1 if condition is true, else expr2)
  *
  * 8. Type Operators:
- *    - typeof : Returns the type of a variable (e.g., typeof a)
- *    - instanceof : Checks if an object is an instance of a class (e.g., a instanceof Array)
+ *     typeof : Returns the type of a variable (e.g., typeof a)
+ *     instanceof : Checks if an object is an instance of a class (e.g., a instanceof Array)
  *
  * These operators are fundamental to writing logic and performing calculations in JavaScript.
  */
@@ -84,6 +87,9 @@ console.log('a++ =', a++);     // Output: 10 (a becomes 11 after this)
 // Increment (pre): Increments b, then returns
 console.log('++b =', ++b);     // Output: 4 (b becomes 4)
 
+// Exponentiation: a raised to the power of b
+console.log('a ** b =', a ** b); // Output: 14641 (11^4)
+
 
 // Assignment Operators Example
 let c = 5;
@@ -96,6 +102,22 @@ console.log('c after += 2:', c); // Output: 7
 // Multiplication assignment: Multiplies c by 3
 c *= 3;
 console.log('c after *= 3:', c); // Output: 21
+
+// Subtraction assignment: Subtracts 4 from c
+c -= 4;
+console.log('c after -= 4:', c); // Output: 17
+
+// Division assignment: Divides c by 2
+c /= 2;
+console.log('c after /= 2:', c); // Output: 8.5
+
+// Modulus assignment: c modulus 3
+c %= 3;
+console.log('c after %= 3:', c); // Output: 2.5
+
+// Exponentiation assignment: c raised to the power of 2
+c **= 2;
+console.log('c after **= 2:', c); // Output: 6.25
 
 
 // Comparison Operators Example
