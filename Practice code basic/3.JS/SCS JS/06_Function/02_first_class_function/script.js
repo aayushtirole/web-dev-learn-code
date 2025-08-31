@@ -1,14 +1,13 @@
 // First Class Functions 
 
 // Functions ko values ki tarah treat kar skte hain 
+ function abcd(val){
+          val();
+ }
 
-// function abcd(val){
-//          val();
-// }
-
-// abcd(function(){
-//     console.log("hello");
-// })
+ abcd(function(){
+     console.log("hello");
+})
 
 // // explaination of code 
 
