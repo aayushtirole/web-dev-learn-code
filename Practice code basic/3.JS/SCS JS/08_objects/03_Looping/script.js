@@ -1,4 +1,4 @@
-//Object Destructuring
+//Objcet Destructuring
 
 
 // Basic Syntax
