@@ -99,7 +99,7 @@ console.log(rps("rock", "rock")); // Output: It's a Tie!
 
 // .......................................................................................................................
 
-// more tricky quetion solution 
+// more tricky question solution 
 
 let x = 2;
 

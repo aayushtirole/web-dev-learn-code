@@ -70,7 +70,7 @@
 
 // dance("ghoda");
 // dance("hiran");
-// dance("aayu");
+// dance("bhaish");
 // dance("ghadha");
 
 // function add(v1, v2){
