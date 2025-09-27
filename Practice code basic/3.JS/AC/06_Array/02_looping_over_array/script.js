@@ -1,0 +1,18 @@
+// looping over array
+
+let fruits = ["apple", "banana", "cherry", "date"];
+
+// Using for loop
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+// Using for...of loop
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+
+// Using forEach method
+fruits.forEach(function(fruit) {
+    console.log(fruit);
+});
