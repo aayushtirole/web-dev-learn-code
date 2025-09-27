@@ -11,10 +11,10 @@
 
 // // explaination of code 
 
-// // ek function banaya jiska naam 'abcd' hai
-// // ye ek parameter 'val' leta hai
+// ek function banaya jiska naam 'abcd' hai
+//  ye ek parameter 'val' leta hai
 // function abcd(val) {
-//     // yaha par 'val' ko function ki tarah call kar rahe hain
+      // yaha par 'val' ko function ki tarah call kar rahe hain
 //     // matlab jo bhi function argument ke रूप में milega, usse execute karega
 //     val();
 // }
