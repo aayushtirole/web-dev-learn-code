@@ -39,5 +39,7 @@ let citrus = fruits.slice(0, 2);
 console.log("Sliced array: ", citrus); // Output: ["avocado", "blueberry"]
 // Note: The original array remains unchanged
 
-
-
+// forEach() - executes a provided function once for each array element 
+fruits.forEach(function(fruit, index) {
+    console.log("Fruit at index " + index + ": " + fruit);
+});
