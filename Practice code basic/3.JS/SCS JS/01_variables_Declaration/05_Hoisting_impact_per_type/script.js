@@ -5,7 +5,7 @@
 // Hoisting ka impact variable ke type per depend karta hain.
 
 
-var a = 12;
+// let a = 12;
 
 // do hisso main yese tutati hain -
 
