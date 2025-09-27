@@ -16,3 +16,5 @@ for (let fruit of fruits) {
 fruits.forEach(function(fruit) {
     console.log(fruit);
 });
+
+//
