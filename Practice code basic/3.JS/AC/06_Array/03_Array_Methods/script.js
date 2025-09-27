@@ -24,3 +24,15 @@ console.log("After unshift: ", fruits); // Output: ["avocado", "banana", "cherry
 // indexOf() - returns the index of the first occurrence of a specified value
 let index = fruits.indexOf("banana");
 console.log("Index of banana: ", index); // Output: 1
+
+// splice() - adds/removes elements from the array
+// Removing 1 element at index 1
+fruits.splice(1, 1);
+console.log("After splice (removal): ", fruits); // Output: ["avocado", "cherry"]
+
+// Adding "blueberry" at index 1    
+fruits.splice(1, 0, "blueberry");
+console.log("After splice (addition): ", fruits); // Output: ["avocado", "blueberry", "cherry"]
+
+
+
