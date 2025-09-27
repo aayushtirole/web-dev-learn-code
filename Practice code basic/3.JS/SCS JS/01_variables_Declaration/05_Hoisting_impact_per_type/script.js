@@ -9,12 +9,6 @@ var a = 12;
 
 // do hisso main yese tutati hain -
 
-var a = undefined; // declare part (hoisted)
-a = 12; // initialize part (not hoisted)
-
-
-let a = 12;
-
 let a; // declare part (ye hoist hota hain )
 a = 12; // initialize part (not hoisted)  
 
