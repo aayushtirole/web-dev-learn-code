@@ -43,3 +43,4 @@ console.log("Sliced array: ", citrus); // Output: ["avocado", "blueberry"]
 fruits.forEach(function(fruit, index) {
     console.log("Fruit at index " + index + ": " + fruit);
 });
+
