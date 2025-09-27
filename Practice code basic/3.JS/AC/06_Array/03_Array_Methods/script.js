@@ -34,5 +34,10 @@ console.log("After splice (removal): ", fruits); // Output: ["avocado", "cherry"
 fruits.splice(1, 0, "blueberry");
 console.log("After splice (addition): ", fruits); // Output: ["avocado", "blueberry", "cherry"]
 
+// slice() - returns a shallow copy of a portion of an array into a new array object
+let citrus = fruits.slice(0, 2);
+console.log("Sliced array: ", citrus); // Output: ["avocado", "blueberry"]
+// Note: The original array remains unchanged
+
 
 
