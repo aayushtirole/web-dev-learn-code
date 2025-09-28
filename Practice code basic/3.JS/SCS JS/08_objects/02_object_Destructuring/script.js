@@ -18,7 +18,7 @@ let person = {
     city: "Indore"
 };
 
-// Destructuring
+// Destructuring 
 const { name, age } = person;
 
 console.log(name); // Output: Aayush
