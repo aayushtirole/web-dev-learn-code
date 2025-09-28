@@ -1,6 +1,6 @@
 // Closures and lexical scoping 
 
-// Closure :-  Ek fnc jo return kare ek aur function aur return hone wala fuction hameha use karega parent fnc ka koe variable 
+// Closure :-  Ek fnc jo return kare ek aur function aur return hone wala fuction hamesha use karega parent fnc ka koe variable 
 
 function abcd(){
     let a = 12;
