@@ -20,7 +20,9 @@ console.log(person.address.city);  // Output: Bhopal ❌ (original bhi change ho
 
 
 // 2) → Object.assign()
-
+// -> Ye bhi shallow copy banata hai, bilkul spread operator ki tarah.
+// -> Syntax: Object.assign(target, ...sources)
+// -> Yahan hum ek empty object `{}` ko target bana rahe hain jisme `person` se properties copy kar rahe hain.
 
 let copy2 = Object.assign({}, person);
 
