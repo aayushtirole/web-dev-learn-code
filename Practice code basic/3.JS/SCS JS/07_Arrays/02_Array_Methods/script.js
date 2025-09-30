@@ -75,6 +75,7 @@ let sr = arr.sort (function(a, b) {
     return b-a;
     
 });
+console.log("sort:", sr);
 // Process: sort() by default string wise sort karta hai
 // Agar numbers ko sort karna ho to compare function dena padta hai
 // (a-b) ascending, (b-a) descending
@@ -85,6 +86,7 @@ let sr = arr.sort (function(a, b) {
 arr.forEach(function(val){
     console.log(val + 5 );
 });
+   console.log("forEach:", arr);
 // Process: forEach() loop ke jaisa kaam karta hai
 // Har element ko ek ek karke process karega
 // Koi naya array return nahi karta, bas action perform karta hai
@@ -100,12 +102,16 @@ arr.forEach(function(val){
 let newarray = arr.map(function(val){
     return 12;
 });
+console.log("map1:", newarray);
 // Process: har element pe function chalega aur uska result ek naye array me store hoga
 // Always returns a NEW array
 
 let newhey = arr.map(function(val){
-    if (val > 10) return val;
+    if (val > 2) return val;
 });
+console.log("map:", newhey);
+// Process: map() function har element pe chalega
+// Jo bhi value return hogi vo naye array me store hogi
 // Agar condition false hui to undefined aayega uss index pe
 
 
@@ -114,6 +120,7 @@ let newhey = arr.map(function(val){
 let newhub = arr.filter(function(val){
    if (val > 4)return true;
 });
+console.log("filter:", newhub);
 // Process: filter() condition true hone par hi element naya array me store karega
 // Always returns NEW array
 
@@ -123,10 +130,13 @@ let newhub = arr.filter(function(val){
 let ans = arr.reduce(function(accumulator,val){
    return accumulator + val;
 },0);
+console.log("reduce:", ans);
 // Process: reduce() array ko ek single value me reduce kar deta hai
 // Step by step accumulator update hota hai
 // Example: [1,2,3] → (((0+1)+2)+3) = 6
-
+// Initial value of accumulator is 0 (provided as second argument to reduce)
+// If initial value is not provided, first element of array is taken as initial value and iteration starts from second element
+// accumulator = previous value, val = current value
 
 // ------------------- FIND -------------------
 
@@ -141,16 +151,19 @@ let arrnew = [
 let va = arrnew.find(function(val){
     return val.key === 1;
 });
+console.log(va);
 // Process: find() array ke andar search karta hai
 // Jo pehla element condition pass kare wahi return hota hai
 // Sirf FIRST match deta hai, saare nahi
 
 
 // ------------------- SOME -------------------
+let somearr = [45, 67, 89, 23, 12, 90];
 
-let any = arr.some(function(val){
+let any = somearr.some(function(val){
    return val > 85;
 });
+console.log(any);
 // Process: some() check karega ki kya kam se kam ek element condition pass karta hai
 // Agar haan to true, nahi to false
 
@@ -158,7 +171,8 @@ let any = arr.some(function(val){
 // ------------------- EVERY -------------------
 
 let eve = arr.every(function (val){
-   return val > 5;
+   return val > 2;
 });
+console.log(eve);
 // Process: every() check karega ki kya saare elements condition pass kar rahe hain
 // Agar ek bhi fail hua to false return karega
