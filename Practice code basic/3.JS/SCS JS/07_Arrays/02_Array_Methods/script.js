@@ -57,7 +57,10 @@ let arr = [1, 2, 3, 4, 5];
 
 
 // ------------------- REVERSE -------------------
-   let rev = arr.reverse();
+
+   let unrevarr = [1,2,3,4,5]
+
+   let rev = unrevarr.reverse();
 // Reverses the array in place (changes original array)
 // arr becomes [7, 1, 9, 2, 5]
    console.log("Reverse:", rev);
@@ -91,8 +94,8 @@ arr.forEach(function(val){
 
 // map sirf tb use krna hain jab aapko ek naya array banana hain pichhle array ka data basis par 
 
-// map dikhte hi saath man main ek blank array banao 
-// jabh bhi yesa koe case dikh jaaye jaha pr ek array se naya array banega and vo naya array kucch vakues ko rakhega tab map lagega 
+// map dikhte hi saath me man main ek blank array banao 
+// jabh bhi yesa koe case dikh jaaye jaha pr ek array se naya array banega and vo naya array kucch values ko rakhega tab map lagega 
 
 let newarray = arr.map(function(val){
     return 12;
