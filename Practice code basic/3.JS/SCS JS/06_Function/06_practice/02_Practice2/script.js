@@ -4,9 +4,9 @@
 //     return weight / (height * height);
 // }
 
-// console.log(bmi(69, 1.7).toFixed(2));
+// console.log(bmi(69, 1.7).toFixed(2)); //tofixed(2) method is used to format the number to 2 decimal places  
 
-// ..........................................................................................................
+// // ..........................................................................................................
 
 // Create a reusable discount calculator (with HOF)
 
