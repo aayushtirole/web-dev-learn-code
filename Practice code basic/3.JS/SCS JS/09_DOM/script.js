@@ -11,3 +11,22 @@
 let element=document.getElementById('click');
 console.log(element);
 
+//2.getElementsByClassName()
+//class ki help se element ko select krta hai
+let elements=document.getElementsByClassName('container');
+console.log(elements);
+
+//3.getElementsByTagName()
+//tag ki help se element ko select krta hai
+let elementsByTag=document.getElementsByTagName('div');
+console.log(elementsByTag);
+
+//4.querySelector()
+//css selector ki help se element ko select krta hai
+let elementByQuery=document.querySelector('.container');
+console.log(elementByQuery);
+
+//5.querySelectorAll()
+//css selector ki help se sare elements ko select krta hai
+let elementsByQueryAll=document.querySelectorAll('.container');
+console.log(elementsByQueryAll);
