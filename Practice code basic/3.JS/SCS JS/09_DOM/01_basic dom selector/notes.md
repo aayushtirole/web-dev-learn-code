@@ -8,6 +8,7 @@
 //selecting elements
 //1.getElementById()
 //id ki help se element ko select krta hai
+
 let element=document.getElementById('click');
 console.log(element);
 
