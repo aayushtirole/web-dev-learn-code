@@ -38,4 +38,4 @@ console.dir(h1);
 //innerHTML ka means hain html ke andar ka value change kr skte hain 
 h1.innerHTML = "<i>hey</i>"; //italic main change kr diya 
 
-//Attribute Manipulation
+
