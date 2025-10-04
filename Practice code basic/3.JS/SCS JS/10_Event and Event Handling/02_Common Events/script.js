@@ -9,6 +9,8 @@ p.addEventListener("click",function(){
 
 let inp = document.querySelector("input");
 
-inp.addEventListener("input",function(evt){
-    console.log(evt.data);
+inp.addEventListener("input",function(dets){
+    if (dets.data !== null && dets.data !== " "){
+        console.log(dets.data);
+    }
 });
