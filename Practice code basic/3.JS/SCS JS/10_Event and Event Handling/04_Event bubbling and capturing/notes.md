@@ -18,3 +18,12 @@ Event capturing means the event travels from the root (outermost) element down t
 1️⃣ Capturing phase (Top → Down)
 2️⃣ Target phase
 3️⃣ Bubbling phase (Bottom → Up)
+
+-----------------------------------------------------------------------------------------
+
+jab bhi apn click krte hain ya koe bhi event raise karte hain toh event flow do phases main chalta hain :
+
+phase 1: event top level element se neeche ki tarf aayega 
+phase 2: event raised element se parent ki traf jayega 
+
+**  hamesha phase 1 hi pahle hota hain par vo by default off rhta hain, agar usse on kar dein to pahle phase 1 ka ans milega 
