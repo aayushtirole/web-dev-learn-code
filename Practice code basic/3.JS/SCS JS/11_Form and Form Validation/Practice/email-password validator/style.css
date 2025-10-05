@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+/* Form container */
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form controls */
+.form-control {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5c6bc0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #3949ab;
+}
+
+/* Error message */
+small {
+    color: red;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    visibility: hidden; /* Hidden by default */
+    font-size: 12px;
+}
+
+/* Input error state */
+.form-control.error input {
+    border-color: red;
+}
+
+/* Input success state */
+.form-control.success input {
+    border-color: green;
+}
