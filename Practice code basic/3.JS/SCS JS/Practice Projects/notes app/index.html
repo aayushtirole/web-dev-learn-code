@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note Cards App</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Note Cards</h1>
+      <button id="add-note"><i class="ri-add-line"></i> Add Note</button>
+    </header>
+
+    <div class="stack-container">
+      <div class="stack"></div>
+      <div class="controls">
+        <button id="upBtn"><i class="ri-arrow-up-line"></i></button>
+        <button id="downBtn"><i class="ri-arrow-down-line"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORM POPUP -->
+  <div class="form-container">
+    <form>
+      <div class="form-header">
+        <h2>Add New Card</h2>
+        <span class="closeForm">&times;</span>
+      </div>
+
+      <input type="text" placeholder="https://example.com/photo.jpg" />
+      <input type="text" placeholder="Enter full name" />
+      <input type="text" placeholder="Enter home town" />
+      <input type="text" placeholder="e.g., Quick appointment note" />
+
+      <div class="category">
+        <label><input type="radio" name="category" value="Work"> Work</label>
+        <label><input type="radio" name="category" value="Personal"> Personal</label>
+        <label><input type="radio" name="category" value="Urgent"> Urgent</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Save Note</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
