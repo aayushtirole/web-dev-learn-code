@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email & Password Validator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email & Password Validator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h2>Login Form</h2>
-        <form autocomplete="off" id="loginForm">
-            <!-- Email Field -->
-            <div class="form-control">
-                <label for="email">Email:</label>
-                <input type="text" id="email" placeholder="Enter your email">
-                <small>Error message</small>
-            </div>
+  <div class="container">
+    <h2>Login Form</h2>
+    <form id="form" autocomplete="off">
+      <!-- Email -->
+      <div class="form-control">
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email" />
+        <small id="emailError"></small>
+      </div>
 
-            <!-- Password Field -->
-            <div class="form-control">
-                <label for="password">Password:</label>
-                <input type="password" id="password" placeholder="Enter your password">
-                <small>Error message</small>
-            </div>
+      <!-- Password -->
+      <div class="form-control">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" />
+        <small id="passwordError"></small>
+      </div>
 
-            <button type="submit">Login</button>
-        </form>
+      <button type="submit">Login</button>
+    </form>
 
-        <div id="resultMessage"></div>
-    </div>
+    <div id="resultMessage"></div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
