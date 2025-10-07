@@ -1,6 +1,6 @@
-// ==========================
+
 // ALL VARIABLES & SELECTIONS
-// ==========================
+
 let addNote = document.querySelector("#add-note");
 let formContainer = document.querySelector(".form-container");
 let closeForm = document.querySelector(".closeForm");
@@ -16,18 +16,18 @@ const purposeInput = form.querySelector("input[placeholder='e.g., Quick appointm
 const categoryRadios = form.querySelectorAll("input[name='category']");
 const submitButton = form.querySelector(".submit-btn");
 
-// ==========================
+
 // SAVE TO LOCAL STORAGE
-// ==========================
+
 function saveToLocalStorage(obj) {
     let oldTasks = JSON.parse(localStorage.getItem("tasks")) || [];
     oldTasks.push(obj);
     localStorage.setItem("tasks", JSON.stringify(oldTasks));
 }
 
-// ==========================
+
 // SHOW CARDS FUNCTION
-// ==========================
+
 function showCards() {
     stack.innerHTML = "";
 
@@ -92,9 +92,9 @@ function showCards() {
     updateStack();
 }
 
-// ==========================
+
 // STACK ANIMATION UPDATE
-// ==========================
+
 function updateStack() {
     const cards = document.querySelectorAll(".stack .card");
     /*
@@ -114,23 +114,23 @@ function updateStack() {
 
 }
 
-// ==========================
+
 // ADD NOTE BUTTON
-// ==========================
+
 addNote.addEventListener("click", function () {
     formContainer.style.display = "block";
 });
 
-// ==========================
+
 // CLOSE FORM BUTTON
-// ==========================
+
 closeForm.addEventListener("click", function () {
     formContainer.style.display = "none";
 });
 
-// ==========================
+
 // FORM SUBMIT EVENT
-// ==========================
+
 form.addEventListener("submit", function (evt) {
     evt.preventDefault();
 
@@ -160,9 +160,9 @@ form.addEventListener("submit", function (evt) {
     showCards();
 });
 
-// ==========================
+
 // STACK NAVIGATION BUTTONS
-// ==========================
+
 upBtn.addEventListener("click", function () {
     const lastChild = stack.lastElementChild;
     if (lastChild) {
@@ -179,7 +179,5 @@ downBtn.addEventListener("click", function () {
     }
 });
 
-// ==========================
 // INITIAL LOAD
-// ==========================
 showCards();
