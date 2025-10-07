@@ -34,7 +34,7 @@ function showCards() {
     let allTasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
     if (allTasks.length === 0) {
-        stack.innerHTML = "<p class='empty'>No cards available. Add one!</p>";
+        stack.innerHTML = "";
         return;
     }
 
@@ -97,11 +97,21 @@ function showCards() {
 // ==========================
 function updateStack() {
     const cards = document.querySelectorAll(".stack .card");
+    /*
     cards.forEach(function (card, index) {
         card.style.zIndex = cards.length - index;
         card.style.transform = `translateY(${index * 10}px) scale(${1 - index * 0.02})`;
-        card.style.opacity = `${1 - index * 0.1}`;
+        card.style.opacity = `${1 - index * 0.2}`;
     });
+    */
+
+    for (let index = 0; index < 3 ; index++) {
+    let card = cards[index];
+    card.style.zIndex = cards.length - index;
+    card.style.transform = `translateY(${index * 10}px) scale(${1 - index * 0.02})`;
+    card.style.opacity = `${1 - index * 0.2}`;
+}
+
 }
 
 // ==========================
