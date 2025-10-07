@@ -1,4 +1,4 @@
-// local storage :- ye browser ke andar data store karna jo ki browser band hone par bhi delete nahi hoga 
+// local storage :- ye browser ke andar data store karta hain jo ki browser band hone par bhi delete nahi hoga 
 
 //Session Storage :- ye data temporarily store krta hain mtlb ki tab (browser tab ) band hua aur data gaya
 
