@@ -47,3 +47,33 @@ Global scope
 
 2. Dynamic Scoping — kuch languages (jaise Bash, Perl) use karti hain ❌ (JS main nahi hota)
 
+* dynamic scoping ka mtlb hain kaha se call kar rhe ho upe depend krega ki kya value milegi 
+
+Dynamic scoping ka matlab hai —
+
+“Function ka scope decide hota hai kahaan se call kiya gaya hai,
+na ki code ke likhe jane ke structure se.”
+
+Matlab variable search call stack ke according hota hai,
+not function’s lexical position.
+
+🧩 Example (Conceptual, JavaScript me nahi chalega):
+var a = 10;
+
+function first() {
+    console.log(a);
+}
+
+function second() {
+    var a = 20;
+    first(); // called from here
+}
+
+second();
+
+
+Agar JavaScript lexical scoping na hoti aur Dynamic scoping hoti —
+toh output 20 hota (kyunki first() ko call second() se mila tha).
+
+Lekin JavaScript Lexical Scoping follow karti hai,
+isliye output 10 aata hai ✅
