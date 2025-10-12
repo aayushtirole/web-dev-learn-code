@@ -24,7 +24,7 @@ function createToaster(config) {
 
     // Agar position default top-left nahi hai to, position classes add karo
     // Yaha ek galti thi: positionY likhne ke jagah config.positionY likhna chahiye
-    if (config.positionX !== "left" || config.positionY !== "top") {
+    if (config.positionX !== "left" || positionY !== "top") {
       document.querySelector(".parent").className +=
         ` ${
           config.positionX === "right" ? " right-5" : " left-5"
