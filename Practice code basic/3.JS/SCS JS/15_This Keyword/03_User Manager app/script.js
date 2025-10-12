@@ -44,7 +44,7 @@ const userManager = {
       card.className =
         "bg-white/90 backdrop-blur rounded-2xl shadow-xl p-8 flex flex-col items-center border border-blue-100 hover:scale-105 transition";
 
-      // 🖼️ Photo section
+      //  Photo section
       const img = document.createElement("img");
       img.className =
         "w-28 h-28 rounded-full object-cover mb-5 border-4 border-blue-200 shadow";
@@ -52,19 +52,19 @@ const userManager = {
       img.alt = "User Photo";
       card.appendChild(img);
 
-      // 🧍‍♂️ Name section
+      //  Name section
       const name = document.createElement("h2");
       name.className = "text-2xl font-bold mb-1 text-blue-700";
       name.textContent = user.username;
       card.appendChild(name);
 
-      // 💼 Role section
+      //  Role section
       const role = document.createElement("p");
       role.className = "text-purple-500 mb-2 font-medium";
       role.textContent = user.role;
       card.appendChild(role);
 
-      // 📝 Bio section
+      //  Bio section
       const desc = document.createElement("p");
       desc.className = "text-gray-700 text-center";
       desc.textContent = user.bio;
