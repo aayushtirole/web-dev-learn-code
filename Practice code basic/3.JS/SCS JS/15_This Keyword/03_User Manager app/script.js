@@ -22,7 +22,11 @@ const userManager = {
 
   // 🔹 New user add karna (form se values lekar)
   addUser: function () {
+    // unique id assign karo har user ko
+    const id = Date.now();
+
     this.users.push({
+      id: id,
       username: username.value,
       role: role.value,
       bio: bio.value,
@@ -35,16 +39,16 @@ const userManager = {
 
   // 🔹 UI render karne ka function (users ko screen par dikhana)
   renderUi: function () {
-    // Pehle purani list clear karo
-    document.querySelector(".users").innerHTML = "";
+    const usersContainer = document.querySelector(".users");
+    usersContainer.innerHTML = ""; // Pehle purani list clear karo
 
     // Har user ke liye ek card banao
-    this.users.forEach(function (user) {
+    this.users.forEach((user) => {
       const card = document.createElement("div");
       card.className =
-        "bg-white/90 backdrop-blur rounded-2xl shadow-xl p-8 flex flex-col items-center border border-blue-100 hover:scale-105 transition";
+        "bg-white/90 backdrop-blur rounded-2xl shadow-xl p-8 flex flex-col items-center border border-blue-100 hover:scale-105 transition relative cursor-pointer";
 
-      //  Photo section
+      // photo
       const img = document.createElement("img");
       img.className =
         "w-28 h-28 rounded-full object-cover mb-5 border-4 border-blue-200 shadow";
@@ -52,31 +56,49 @@ const userManager = {
       img.alt = "User Photo";
       card.appendChild(img);
 
-      //  Name section
+      // name
       const name = document.createElement("h2");
       name.className = "text-2xl font-bold mb-1 text-blue-700";
       name.textContent = user.username;
       card.appendChild(name);
 
-      //  Role section
+      // role
       const role = document.createElement("p");
       role.className = "text-purple-500 mb-2 font-medium";
       role.textContent = user.role;
       card.appendChild(role);
 
-      //  Bio section
+      // bio
       const desc = document.createElement("p");
       desc.className = "text-gray-700 text-center";
       desc.textContent = user.bio;
       card.appendChild(desc);
 
+      // ❌ Remove Button
+      const removeBtn = document.createElement("button");
+      removeBtn.textContent = "Remove";
+      removeBtn.className =
+        "mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition";
+      card.appendChild(removeBtn);
+
+      // 🔸 Remove button click event
+      removeBtn.addEventListener("click", () => {
+        this.removeUser(user.id); // user ki id pass karte hain
+      });
+
       // Card ko UI mein add karo
-      document.querySelector(".users").appendChild(card);
+      usersContainer.appendChild(card);
     });
   },
 
-  // 🔹 (Future use) User remove karne ka function
-  removeUser: function () {},
+  // 🔹 User remove karne ka function
+  removeUser: function (userId) {
+    // filter() se vo user hata dena jiska id match karta hai
+    this.users = this.users.filter((user) => user.id !== userId);
+
+    // UI ko dobara render karna
+    this.renderUi();
+  },
 };
 
 // 🔹 Initialize app
