@@ -26,7 +26,7 @@ abc();
 
 // if arrow function use karenge toh this apni value loose kr dega or vo window ban jaayega yaa dega 
 
-// yadi apn ne fir se method (function) ke andar ek or function bana diya toh fir se this value loose kr dega or window dega 
+// yadi apn ne fir se method (function) ke andar ek or function bana diya toh fir se this value loose kr dega or window dega or yadi handle karna ho toh andar wala function hamesha arrow function jisae value loose nhi hogi 
 
 let obj = {
     name : "Aayush",
@@ -44,8 +44,8 @@ obj.sayName();
 // to 'this' bhi loose ho jaata hai, kyunki ab wo normal function ke jaise call ho raha hai.
 // Example:
 
-let ref = obj.sayName;
-ref(); // ❌ yahaan 'this' = window (not obj)
+// let ref = obj.sayName;
+// ref(); // ❌ yahaan 'this' = window (not obj)
 
 // Isliye object ke context mein hi call karna chahiye (obj.sayName())
 // ya 'bind()' use karna chahiye to fix 'this':
