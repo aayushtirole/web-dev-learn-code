@@ -2,6 +2,7 @@
 
 
 // ✅ Constructor function: Blueprint create kar raha hai pencil objects ke liye
+
 function CreatePencil(name, price, color, company) {
   // 🔹 'this' refers to the new object being created
   this.name = name;         // 🔹 Pencil ka naam store karne ke liye
@@ -11,7 +12,10 @@ function CreatePencil(name, price, color, company) {
 }
 
 // ✅ Prototype method: Har object ke liye ek hi method share hoga, memory efficient
+// agar tumhaara constructor function koi field apne prototype par attach karle to us constructor se banne waale sabhi new objects, ke paas wo field automatically chali jaati hai
+
 CreatePencil.prototype.write = function (text) {
+
   // 🔹 H1 element create kar rahe hain jo text ko show karega
   let h1 = document.createElement("h1");
 
@@ -29,5 +33,7 @@ CreatePencil.prototype.write = function (text) {
 };
 
 // ✅ Creating objects using 'new': ek-ek naya pencil object create ho raha hai
+
 let pencil1 = new CreatePencil("Nataraj", 10, "black", "nataraj"); // 🔹 Black Nataraj pencil
+
 let pencil2 = new CreatePencil("Doms", 10, "red", "doms");         // 🔹 Red Doms pencil
