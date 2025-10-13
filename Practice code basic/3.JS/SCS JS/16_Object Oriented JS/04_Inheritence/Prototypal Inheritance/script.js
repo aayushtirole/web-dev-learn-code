@@ -1,6 +1,11 @@
 // inheritence :- class -> class
 // Prototypal inheritence :- sirf js main hota hain 
 // object -> object se inherit kata hain 
+// ek object hain aap chaaho toh uski saari properties / methods ko inherit kara dete ho doosre object main 
+
+// exmaple :
+// let a = {};
+// let b = object.crate(a);
 
 // ✅ Base object
 const user = {

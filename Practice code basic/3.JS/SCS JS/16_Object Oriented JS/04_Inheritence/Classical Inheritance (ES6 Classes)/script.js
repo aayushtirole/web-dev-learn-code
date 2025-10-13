@@ -1,6 +1,7 @@
 // inheritence :- class -> class
 // classical inheritence  :- java, cpp
-// classes banana and extend kardena 
+// classes banana and extend kardena \
+
 
 // ✅ Base Class
 class User {
