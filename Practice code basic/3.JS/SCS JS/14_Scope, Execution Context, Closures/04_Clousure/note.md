@@ -1,4 +1,4 @@
-// Closure hote hain function jo ki kisi parent function ke andar waala function return ho raha ho, and returning function use kare, parent function ka koi variable 
+// Closure hote hain vo function jo ki kisi parent function ke andar waala function return ho raha ho, and returning function use kare, parent function ka koi variable 
 
 function abcd (){
     let a = 12;
