@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Users Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen p-8 flex flex-col items-center">
+
+    <!-- Title -->
+    <h1 class="text-5xl font-extrabold mb-8 text-center text-indigo-400 drop-shadow-lg">
+        Random Users Generator
+    </h1>
+
+    <!-- Refresh Button -->
+    <button 
+        id="refreshBtn" 
+        class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-xl mb-10 transform hover:scale-105"
+        aria-label="Refresh random users"
+    >
+        Refresh Users
+    </button>
+
+    <!-- Users Container -->
+    <section class="users grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-6xl">
+        <!-- User cards will be dynamically generated here via JS -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
