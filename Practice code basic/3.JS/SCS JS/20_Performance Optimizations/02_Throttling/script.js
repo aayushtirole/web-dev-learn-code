@@ -1,2 +1,3 @@
 //throttling
+
 // Agar koi event (jaise scroll, resize, ya mousemove) baar-baar fire ho raha hai, to throttling us function ko har baar chalne se rokta hai aur sirf ek certain gap ke baad hi chalata hai (for example, har 200ms ke baad).
