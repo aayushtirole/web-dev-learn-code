@@ -14,6 +14,7 @@ function CreatePencil(name, price, color, company) {
 // ✅ Prototype method: Har object ke liye ek hi method share hoga, memory efficient
 // agar tumhaara constructor function koi field apne prototype par attach karle to us constructor se banne waale sabhi new objects, ke paas wo field automatically chali jaati hai
 
+
 CreatePencil.prototype.write = function (text) {
 
   // 🔹 H1 element create kar rahe hain jo text ko show karega
