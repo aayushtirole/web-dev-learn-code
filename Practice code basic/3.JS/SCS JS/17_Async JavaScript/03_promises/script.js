@@ -1,6 +1,7 @@
 // promises 
 
-// aap ek promise banaate ho jo ki od states main se ek state me jaa skta hain and wo yaa toh resolve hoga yaa to reject hoga ab wo kya hoga ye toh waqt baatayega par humein dono ke liye code likhan padta hain 
+// aap ek promise banaate ho jo ki do states main se ek state me jaa skta hain and wo yaa toh resolve hoga yaa to reject hoga ab wo kya hoga ye toh waqt baatayega par humein dono ke liye code likhana padta hain 
+
 // Creating a Promise
 // A promise can go into one of three states: pending, resolved, or rejected.
 // We have to write code to handle both success (resolve) and failure (reject).
