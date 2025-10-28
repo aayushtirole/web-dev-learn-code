@@ -1,4 +1,4 @@
-// kai bhi code js main line by lin echalega aur ye natural pattern bhi hota hain ki code line bby line chale , but kabhi kabaar aise case aate hain life main jaha par aapka code wait karta hain and utni der main agla code chal jaata hain 
+// kahi bhi code js main line by line chalega aur ye natural pattern bhi hota hain ki code line by line chale , but kabhi kabaar aise case aate hain life main jaha par aapka code wait karta hain and utni der main agla code chal jaata hain 
 
 // sync and async 
 
