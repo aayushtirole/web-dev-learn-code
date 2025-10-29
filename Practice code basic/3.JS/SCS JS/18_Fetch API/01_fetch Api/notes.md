@@ -87,7 +87,7 @@ async function createPost() {
 createPost();
 ```
 
-**Hinglish Explanation:**
+Hinglish Explanation:
 
 * `method: "POST"` → HTTP POST request bhej raha hai.
 * `headers` → content type define karta hai (JSON).
