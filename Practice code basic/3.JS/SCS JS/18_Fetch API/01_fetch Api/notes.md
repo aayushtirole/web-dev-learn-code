@@ -94,7 +94,7 @@ Hinglish Explanation:
 * `body: JSON.stringify(...)` → JS object ko JSON string me convert karta hai.
 * Response ko `.json()` ke saath parse karke handle kar sakte ho.
 
----
+
 
 ## **5️⃣ Important Points about Fetch**
 
