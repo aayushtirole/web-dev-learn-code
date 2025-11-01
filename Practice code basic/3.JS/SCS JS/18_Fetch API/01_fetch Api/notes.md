@@ -95,7 +95,6 @@ Hinglish Explanation:
 * Response ko `.json()` ke saath parse karke handle kar sakte ho.
 
 ## **5️⃣ Important Points about Fetch**
-
 1. **Promise-based:**
 
    * Hamesha Promise return karta hai, `.then/.catch` ya `async/await` dono use kar sakte ho.
