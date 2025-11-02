@@ -85,7 +85,6 @@ async function createPost() {
 }
 
 createPost();
-```
 
 Hinglish Explanation:
 
