@@ -109,11 +109,9 @@ if (!response.ok) {
 }
 
 3. **Headers:**
-
    * Headers me aap specify karte ho content-type ya authorization info.
 
 4. **JSON parsing:**
-
    * `response.json()` bhi Promise return karta hai.
    * `.text()` ya `.blob()` bhi use kar sakte ho depending on response type.
 
