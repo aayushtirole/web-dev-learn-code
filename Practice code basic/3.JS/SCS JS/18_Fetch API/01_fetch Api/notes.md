@@ -107,7 +107,6 @@ Hinglish Explanation:
 if (!response.ok) {
     throw new Error("HTTP error " + response.status);
 }
-```
 
 3. **Headers:**
 
