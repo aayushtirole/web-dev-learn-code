@@ -60,7 +60,6 @@ getPost();
 
 ## **4️⃣ POST request example**
 
-```js
 async function createPost() {
     try {
         let response = await fetch("https://jsonplaceholder.typicode.com/posts", {
