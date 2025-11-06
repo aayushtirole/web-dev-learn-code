@@ -58,8 +58,6 @@ getPost();
 * `try/catch` → errors ko handle karta hai, `.catch()` ki jagah.
 * Code **line by line synchronous lagta hai**, par asynchronous hai.
 
----
-
 ## **4️⃣ POST request example**
 
 ```js
