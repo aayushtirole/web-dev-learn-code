@@ -100,7 +100,6 @@ Hinglish Explanation:
    * Agar server 404 ya 500 return kare, fetch reject nahi hota.
    * Check `response.ok` for status:
 
-```js
 if (!response.ok) {
     throw new Error("HTTP error " + response.status);
 }
