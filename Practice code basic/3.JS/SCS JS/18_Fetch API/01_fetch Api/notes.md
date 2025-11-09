@@ -115,9 +115,7 @@ if (!response.ok) {
 
    * Code clean aur readable lagta hai.
    * Multiple fetch requests sequential ya parallel (`Promise.all`) run kar sakte ho.
-
----
-
+   
 ## **6️⃣ Example: Multiple fetch requests sequentially**
 
 ```js
