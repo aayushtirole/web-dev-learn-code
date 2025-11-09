@@ -118,7 +118,6 @@ if (!response.ok) {
    
 ## **6️⃣ Example: Multiple fetch requests sequentially**
 
-```js
 async function getPostsAndUsers() {
     try {
         let posts = await fetch("https://jsonplaceholder.typicode.com/posts");
