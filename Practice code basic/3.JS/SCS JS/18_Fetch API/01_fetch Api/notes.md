@@ -133,12 +133,9 @@ async function getPostsAndUsers() {
 }
 
 getPostsAndUsers();
-```
 
 * `await` ensures **sequential execution**: pehle posts → fir users.
 * Agar parallel chahiye → use `Promise.all([fetch1, fetch2])`.
-
----
 
 ✅ **Summary (Hinglish)**:
 
