@@ -139,6 +139,7 @@ getPostsAndUsers();
 
 ✅ **Summary (Hinglish)**:
 
+
 * `fetch()` = HTTP request → returns Promise.
 * `.then/.catch` ya **async/await** se handle karte ho.
 * `.json()` = response parse karne ke liye.
