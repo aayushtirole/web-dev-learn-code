@@ -138,6 +138,8 @@ getPostsAndUsers();
 * Agar parallel chahiye → use `Promise.all([fetch1, fetch2])`.
 
 
+
+
 ✅ **Summary (Hinglish)**:
 * `fetch()` = HTTP request → returns Promise.
 * `.then/.catch` ya **async/await** se handle karte ho.
